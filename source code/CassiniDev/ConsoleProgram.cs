@@ -53,7 +53,7 @@ namespace CassiniDev
 
                             using (var server =
                                 new Server(port, args.VirtualPath, args.ApplicationPath,
-                                    ip, args.HostName, args.TimeOut))
+                                    ip, args.HostName))
                             {
                                 server.Start();
                                 if(!string.IsNullOrEmpty(args.Browse))
